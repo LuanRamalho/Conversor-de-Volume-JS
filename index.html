@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <title>Conversor de Unidades de Volume</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Conversor de Unidades de Volume</h1>
+
+    <div class="container">
+        <label for="valorInput">Valor a converter:</label>
+        <input type="number" id="valorInput">
+
+        <div class="unidades">
+            <label for="unidadeEntrada">Unidade de entrada:</label>
+            <select id="unidadeEntrada">
+                <option value="litro">Litro (L)</option>
+                <option value="mililitro">Mililitro (mL)</option>
+                <option value="galão">Galão (gal)</option>
+                <option value="polegada cúbica">Polegada cúbica (in³)</option>
+                </select>
+        </div>
+
+        <div class="unidades">
+            <label for="unidadeSaida">Unidade de saída:</label>
+            <select id="unidadeSaida">
+                <option value="litro">Litro (L)</option>
+                <option value="mililitro">Mililitro (mL)</option>
+                <option value="galão">Galão (gal)</option>
+                <option value="polegada cúbica">Polegada cúbica (in³)</option>
+                </select>
+        </div>
+
+        <button onclick="converter()">Converter</button>
+
+        <p id="resultado"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
